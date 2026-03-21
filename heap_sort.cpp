@@ -10,14 +10,14 @@ void maxHeapify(int arr[], int i, int length){
     r = 2*i + 2;
 
     if(l < length && arr[l] > arr[largest]){
-        largest = l;
+        largest = l;  //if left child is greater 
     }
     if(r< length && arr[r] > arr[largest]){
-        largest = r;
+        largest = r; //if right child is greater
     }
     if(largest != i){
-        swap(arr[i], arr[largest]);
-        maxHeapify(arr, largest, length);
+        swap(arr[i], arr[largest]);  //swap ith elm with largest
+        maxHeapify(arr, largest, length); //again call max heapify for subtree
     }
 }
 
