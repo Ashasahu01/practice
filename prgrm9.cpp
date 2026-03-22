@@ -1,6 +1,5 @@
 //call by reference 
 #include<stdio.h>
-int swap(int,int);
 int swap(int &x,int &y){
     int temp= x;
     x=y;
