@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+//function for factorial
 int fact(int n){
     if(n==0 || n==1)
         return 1;
